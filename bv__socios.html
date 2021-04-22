@@ -7,7 +7,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
 		<style type="text/css">
 
-
+		@media only screen and (min-device-width: 601px) { 
+				.principal {width: 600px !important;}
+		}	
+		/* Reset para apple mail */
 
         @media only screen and (max-width:480px){
             html, body, div, span, applet, object, iframe,
@@ -189,6 +192,11 @@
 		</style>
 	</head>
 	<body style="margin: 0 auto; padding: 0; border: 0; font-family: 'Lato', Helvetica, sans-serif; background-color: #ffffff;">
+	<!--[if (gte mso 9)|(IE)]>
+	<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <![endif]-->
 		<table class="principal" style="width:600px; margin: 0 auto; padding: 0; vertical-align:baseline; border-collapse:collapse; border-spacing:0;">
 			<!-- HEADER -->
 			<tr class="row-header" style="width:600px; height:160px; margin: 0; padding: 0; border: 0; border-collapse:collapse; border-spacing: 0; display:inline-block;">
@@ -300,6 +308,10 @@
             </tr>
             <!-- FIN FOOTER -->
 		</table>
-    
+     <!--[if (gte mso 9)|(IE)]>
+        </td>
+    </tr>
+</table>
+<![endif]-->
 </body>
 </html>
