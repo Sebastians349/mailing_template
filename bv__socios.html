@@ -101,9 +101,9 @@
 			}
 			
 			.contenedorContacto{
-				display: flex;
-				flex-direction: column;
-				align-items: center;
+				display: flex !important;
+				flex-direction: column !important;
+				align-items: center !important;
 
 			}
 
@@ -114,39 +114,41 @@
 			}
 
 			.textoTelefono {
-				margin: 9px 17px 0 0 !important;
+				margin: 8px 0 0 0 !important;
+				font-size: small !important;
 			}
 
 			.textoMail {
-				margin: 8px 0 0 0 !important;
+				margin: 8px 0 0 0 !important;.
+				font-size: small !important;
+
 			}
 			
 			.textoWapp {
 				margin: 8px 0 0 0 !important;
+
 			}
 
 			.textoWapp a{
-				font-size: 14px;
-			}
+				font-size: small !important;
 
-			
+			}
 
 			.contenedorRedes {
 				margin: 10px auto 30px !important;
 			}
 
 			.textoTerciario {
-				width: 300px;
+				width: 300px !important;
 			}
-			.textoTerciario p {
-				font-size: 10px;
+			.rd {
+				font-size: 12px !important;
 			}
 
 			
 			.contactoFacebook, .contactoTwitter, .contactoInstagram {
 				width: 23% !important;
-				height: 50px !important;
-				text-align: center !important;
+				height: auto !important;
 				margin: 0 10px !important;
 			}
 
@@ -154,12 +156,13 @@
 				float: none !important;
 			}
 
-			.textoFacebook, .textoTwitter, .textoInstagram, .textoWapp {
-				font-size: 20px !important;
+			.textoFacebook, .textoTwitter, .textoInstagram {
+				display: none !important;
 			}
 
-			.iconoFacebook, .iconoTwitter, .iconoInstagram, .iconoWapp {
+			.iconoFacebook, .iconoTwitter, .iconoInstagram {
 				margin: 10px auto !important;
+				height: 1.2em !important;
 			}
             
 			.linkSagai {
@@ -241,24 +244,26 @@
 						</div>
 					</div>
 					
-					<div class="contenedorRedes" style="width: 90%; height: 150px; text-align: center; margin: 25px auto;
+					<div class="contenedorRedes" style="width: 90%; height: 10rem; text-align: center; margin: .5rem auto;
 					background-image: url(cuad__gris.png); background-size: 100%; background-repeat: no-repeat;  ">
-					<p class="textoTerciario" style="width: 450px; color: #1d4b5f; display: block; text-align: center; font-family: Lato, sans-serif; font-size: 18px; margin: 0 auto -16px; line-height: 4; ">
-						¡No te quedes afuera de nuestras novedades! <strong>Seguinos en</strong>
-					</p>
-						<div class="contactoFacebook" style="display: inline-block; width: 25%; margin: 10px  ; height: 35px; vertical-align: middle;">
-							<img src="fb.png" alt="" class="iconoFacebook" style="height: 30px; margin: 2px 0;">
-							<p class="textoFacebook" style="font-family: Lato, sans-serif; font-size: 20px; line-height: 30px; margin: 2px 10px 0 1px; float: right;"><a href="https://facebook.com/sagai.org" target="_blank" style="text-decoration: none; color: #1d4b5f;">sagai.org</a></p>
+						<p class="textoTerciario rd" style="width: 450px; color: #1d4b5f; display: block; text-align: center; font-family: Lato, sans-serif; font-size: 18px; margin: 0 auto -16px; line-height: 4; ">
+							¡No te quedes afuera de nuestras novedades! <strong>Seguinos en</strong>
+						</p>
+						<div class="contactoFacebook" style="display: inline-block; width: 25%; margin: 10px  ; height: 35px; vertical-align: middle;"><a href="https://facebook.com/sagai.org" target="_blank" style="text-decoration: none; ">
+							<img src="fb.png" alt="" class="iconoFacebook" style="height: 30px; margin: 2px 0;"></a>
+							<p class="textoFacebook" style="font-family: Lato, sans-serif; font-size: 20px; line-height: 30px; margin: 2px 10px 0 1px; float: right; color: #1d4b5f;">sagai.org
+							</p>
 						</div>
-						<div class="contactoInstagram" style="display: inline-block; width: 25%; margin: 10px; height: 35px; vertical-align: middle;">
-							<img src="ig.png" alt="" class="iconoInstagram" style="height: 30px; margin: 2px 0;">
-							<p class="textoInstagram" style="font-family: Lato, sans-serif; font-size: 20px; line-height: 30px; margin: 2px 0; float: right;"><a href="https://instagram.com/sagai_org" target="_blank" style="text-decoration: none; color: #1d4b5f;">sagai_org</a></p>
+						<div class="contactoInstagram" style="display: inline-block; width: 25%; margin: 10px  ; height: 35px; vertical-align: middle;"><a href="https://instagram.com/sagai_org" target="_blank" style="text-decoration: none; ">
+							<img src="ig.png" alt="" class="iconoInstagram" style="height: 30px; margin: 2px 0;"></a>
+							<p class="textoInstagram" style="font-family: Lato, sans-serif; font-size: 20px; line-height: 30px; margin: 2px 10px 0 1px; float: right; color: #1d4b5f;">sagai_org
+							</p>
 						</div>
-						<div class="contactoTwitter" style="display: inline-block; width: 25%; margin: 10px; height: 35px; vertical-align: middle;">
-							<img src="twitter.png" alt="" class="iconoTwitter" style="height: 30px; margin: 2px 0;">
-							<p class="textoTwitter" style="font-family: Lato, sans-serif; font-size: 20px; line-height: 30px; margin: 2px 0; float: right;"><a href="https://twitter.com/sagai_org" target="_blank" style="text-decoration: none; color: #1d4b5f;">sagai_org</a></p>
+						<div class="contactoTwitter" style="display: inline-block; width: 25%; margin: 10px  ; height: 35px; vertical-align: middle;"><a href="https://twitter.com/sagai_org" target="_blank" style="text-decoration: none; ">
+							<img src="twitter.png" alt="" class="iconoTwitter" style="height: 30px; margin: 2px 0;"></a>
+							<p class="textoTwitter" style="font-family: Lato, sans-serif; font-size: 20px; line-height: 30px; margin: 2px 10px 0 1px; float: right; color: #1d4b5f;">sagai_org
+							</p>
 						</div>
-						
 					</div>
 					<p class="textoCuaternario" style="width: 550px; display: block; font-family: Lato, sans-serif; font-size: 16px; margin: 10px auto; color: #1d4b5f; line-height: 1.5; text-align: center; word-spacing: 1px;">
 						Para conocer más sobre SAGAI y el derecho de propiedad intelectual visitá nuestro sitio web
